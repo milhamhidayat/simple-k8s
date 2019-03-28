@@ -1,2 +1,7 @@
 # simple-k8s
-Simple kubernetes config from Docker Kubernetes Course
+Simple k8s from kubernetes course
+
+## Create object
+```sh
+kubectl apply -f <object manifest/config file>
+```
