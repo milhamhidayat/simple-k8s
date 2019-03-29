@@ -6,7 +6,7 @@ Simple k8s from kubernetes course
 kubectl apply -f <object manifest/config file>
 ```
 
-Run
+* create pod and services object
 ```sh
 kubectl apply -f client-pod.yaml
 kubectl apply -f client-node-port.yaml 
