@@ -21,3 +21,14 @@ minikube ip
 ```sh
 <ip>:31515
 ```
+
+* Get detailed info about an object
+```sh
+kubectl describe <object type> <object name>
+``
+
+## Deployment
+
+There are two
+* Imperative deployment - do these steps to arrive this container setup
+* Declarative deployment - container setup should look like this, make it happen

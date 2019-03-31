@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - name: client
-      image: photon628/multi-client  
+      image: photon628/multi-worker  
       ports:
         - containerPort: 3000
