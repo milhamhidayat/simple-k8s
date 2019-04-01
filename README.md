@@ -43,3 +43,37 @@ Delete pod
 kubectl delete -f <config file>
 ```
 
+## Update deployment
+
+Open multi-docker-client
+
+1. Build docker image
+```sh
+docker build -t <docker id>/<image name>:<tag> .
+```
+
+Example:
+```sh
+docker build -t photon628/multi-client:v5 .
+```
+
+2. Push to docker hub
+```sh
+docker push <docker id>/<image name>:<tag>
+```
+
+Example:
+```sh
+docker push photon628/multi-client:v5
+```
+
+3. Imperative command to update deployment image
+
+```sh
+kubectl set image <object-type>/<object-name> <container-name>=<new image to use>
+```
+
+Example:
+```sh
+kubectl set image deployment/client-deployment client=photon628/multi-client:v5
+```
