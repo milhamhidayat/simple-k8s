@@ -77,3 +77,14 @@ Example:
 ```sh
 kubectl set image deployment/client-deployment client=photon628/multi-client:v5
 ```
+
+## Connect docker command to container inside kubernetes
+
+```sh
+eval $(minikube docker-env)
+```
+
+Simplify
+```sh
+minikube docker-env
+```
