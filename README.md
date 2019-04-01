@@ -25,7 +25,7 @@ minikube ip
 * Get detailed info about an object
 ```sh
 kubectl describe <object type> <object name>
-``
+```
 
 ## Deployment
 
@@ -34,7 +34,12 @@ kubectl describe <object type> <object name>
 - ensure have the correct config and the right number exists
 - will monitor
 
-There are two
+There are two:
 * Imperative deployment - do these steps to arrive this container setup
 * Declarative deployment - container setup should look like this, make it happen
+
+Delete pod
+```sh
+kubectl delete -f <config file>
+```
 
