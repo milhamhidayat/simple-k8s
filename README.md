@@ -29,6 +29,12 @@ kubectl describe <object type> <object name>
 
 ## Deployment
 
+- object controller to update or rollback pods & replica set
+- maintain set of identical pods
+- ensure have the correct config and the right number exists
+- will monitor
+
 There are two
 * Imperative deployment - do these steps to arrive this container setup
 * Declarative deployment - container setup should look like this, make it happen
+
